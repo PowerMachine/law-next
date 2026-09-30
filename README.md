@@ -25,6 +25,10 @@ responses whose legal grounding could not be verified.
 
 ![Law Next conversation and grounding state](assets/law-next-grounding.png)
 
+An ordinary, non-legal assistant response is shown separately from legal-workflow outputs.
+
+![Law Next general assistant conversation](assets/law-next-general-chat.png)
+
 ### Structured legal comparison
 
 ![Law Next structured civil and criminal procedure comparison](assets/law-next-comparison.png)
