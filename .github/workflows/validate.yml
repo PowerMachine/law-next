@@ -1,0 +1,29 @@
+name: Public snapshot
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate aggregate evidence
+        run: |
+          python -m json.tool public-evidence/evaluation-summary.json >/dev/null
+          test -s assets/workspace-overview.png
+          test -s docs/ARCHITECTURE.md
+          test -s docs/EVALUATION.md
+      - name: Enforce public boundary
+        run: |
+          test ! -d app
+          test ! -d data
+          test ! -d evaluation/runs
+          test ! -d tests

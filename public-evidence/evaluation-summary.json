@@ -1,0 +1,32 @@
+{
+  "schema_version": "law-next-public-evidence-v1",
+  "claim": "Failure-driven revisions improved a fixed internal 70-case rubric.",
+  "legal_accuracy_certified": false,
+  "evaluation_only": true,
+  "cases": 70,
+  "tools": 7,
+  "baseline": {
+    "completed": 70,
+    "passed": 20,
+    "provisional_rubric_pass_rate": 0.2857,
+    "average_score": 5.4,
+    "critical_errors": 39,
+    "forbidden_hallucinations": 6
+  },
+  "revised": {
+    "completed": 70,
+    "passed": 43,
+    "provisional_rubric_pass_rate": 0.6143,
+    "average_score": 7.429,
+    "critical_errors": 12,
+    "forbidden_hallucinations": 3
+  },
+  "excluded_from_public_evidence": [
+    "legal questions and answers",
+    "statute and precedent excerpts",
+    "reviewer outputs",
+    "third-party datasets",
+    "customer or user documents",
+    "implementation source"
+  ]
+}
