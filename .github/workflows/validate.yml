@@ -18,7 +18,10 @@ jobs:
       - name: Validate aggregate evidence
         run: |
           python -m json.tool public-evidence/evaluation-summary.json >/dev/null
-          test -s assets/workspace-overview.png
+          test -s assets/law-next-login.png
+          test -s assets/law-next-workspace.png
+          test -s assets/law-next-grounding.png
+          test -s assets/law-next-comparison.png
           test -s docs/ARCHITECTURE.md
           test -s docs/EVALUATION.md
       - name: Enforce public boundary

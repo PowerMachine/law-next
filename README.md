@@ -10,7 +10,24 @@ separated.
 > This public repository is a portfolio case study, not the product source tree. Core retrieval,
 > routing, verification, security, and deployment implementations remain private.
 
-![Law Next workspace](assets/workspace-overview.png)
+![Law Next workspace](assets/law-next-workspace.png)
+
+## Product walkthrough
+
+### Private workspace entry
+
+![Law Next login and deployment boundary](assets/law-next-login.png)
+
+### Evidence-aware conversation
+
+The interface exposes generation speed and latency while distinguishing ordinary generation from
+responses whose legal grounding could not be verified.
+
+![Law Next conversation and grounding state](assets/law-next-grounding.png)
+
+### Structured legal comparison
+
+![Law Next structured civil and criminal procedure comparison](assets/law-next-comparison.png)
 
 ## What I built
 
